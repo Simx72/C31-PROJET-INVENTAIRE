@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="9DTcWJNsjgkDrvd6nqHH">
+    <mxGraphModel dx="1030" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rfB4qMRG9C2MVhx0brbO-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="410" width="250" x="460" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rfB4qMRG9C2MVhx0brbO-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="410" width="250" x="40" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rfB4qMRG9C2MVhx0brbO-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Login" vertex="1">
+          <mxGeometry height="60" width="90" x="540" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rfB4qMRG9C2MVhx0brbO-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Nom" vertex="1">
+          <mxGeometry height="35" width="140" x="515" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="rfB4qMRG9C2MVhx0brbO-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Prenom" vertex="1">
+          <mxGeometry height="30" width="140" x="515" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rfB4qMRG9C2MVhx0brbO-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Numéro d&#39;identifiant (matricule)" vertex="1">
+          <mxGeometry height="30" width="140" x="515" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="rfB4qMRG9C2MVhx0brbO-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Connexion" vertex="1">
+          <mxGeometry height="30" width="140" x="515" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="rfB4qMRG9C2MVhx0brbO-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Inscription" vertex="1">
+          <mxGeometry height="30" width="60" x="130" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rfB4qMRG9C2MVhx0brbO-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Prenom" vertex="1">
+          <mxGeometry height="30" width="140" x="95" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rfB4qMRG9C2MVhx0brbO-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Nom" vertex="1">
+          <mxGeometry height="35" width="140" x="95" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="rfB4qMRG9C2MVhx0brbO-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Numéro d&#39;identifiant (matricule)" vertex="1">
+          <mxGeometry height="30" width="140" x="95" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="rfB4qMRG9C2MVhx0brbO-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Connexion" vertex="1">
+          <mxGeometry height="30" width="140" x="95" y="370" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
