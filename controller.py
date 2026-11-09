@@ -1,3 +1,12 @@
+from model.model import Model
+from view.view import View
+
 class Controller:
+    # Properties - hints
+    model: Model
+    view: View
+
     def __init__(self):
-        print("Hi!")
+        # Properties definitions
+        self.model = Model()
+        self.view = View()
