@@ -27,6 +27,7 @@ class Usager():
 
     def mot_de_passe_correcte(self, password1, password2):
         if (password1 == password2):
+            self.password = password1
             return True
         else:
             raise ValueError("Les mots de passe ne correspondent pas.")

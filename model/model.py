@@ -33,6 +33,14 @@ class Usager():
         self.is_personnel = personnel # si false == etudiant, si true == personnel  
 
 
+    def mot_de_passe_correcte(self, password1, password2):
+            while True:
+                if (password1 == password2):
+                    self.password = password1
+                    return False
+                else:
+                    raise ValueError("Les mots de passe ne correspondent pas.")
+                    return True # continue la boucle jusqu'à ce que les mots de passe soient corrects
 
 
 class Model():

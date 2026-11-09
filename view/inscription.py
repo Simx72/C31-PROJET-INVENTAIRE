@@ -47,6 +47,5 @@ class View():
 
             self.model.prenom = prenom
             self.model.nom = nom
-            # to see if email valid
             self.model.email = email.message.EmailMessage()
             self.model.mot_de_passe_correcte(password1, password2)
