@@ -1,23 +1,23 @@
 import sys
 from pathlib import Path
+from typing import Any, Generator
 import conf
 from uuid import uuid4, UUID
+import csv
 
 EXEMPLE_FILENAME = "exemple.csv"
 
 class Row:
     _headers: tuple[str, ...]
     _values: tuple[str, ...]
-    def __init__(self, _headers: tuple[str, ...], id: UUID, values: tuple[str, ...]) -> None:
-        self._headers = _headers
-        tmp_values: list[str] = []
-        tmp_values.append(str(id))
-        self.values = values
+    def __init__(self, headers: tuple[str, ...], id: UUID, values: tuple[str, ...]) -> None:
+        self._headers = ("uuid",) + headers
+        self._values = (str(id),) + values
     
     def get_str(self, key: str) -> str:
         try:
             index = self._headers.index(key)
-            return self.values[index]
+            return self._values[index]
         except ValueError:
             raise ValueError(f"No key {key} in this table. Did you mispelled the column name ?")
 
@@ -27,42 +27,81 @@ class Row:
     def get_float(self, key: str) -> float:
         return float(self.get_str(key))
 
-class TableData:
-    _headers: tuple[str, ...]
-    _rows: dict[UUID, tuple[str, ...]]
+    def to_dict(self) -> dict[str, str]:
+        my_dict: dict[str, str] = {}
+        for header, value in list(zip(self._headers, self._values)):
+            my_dict[header] = value
+        return my_dict
 
-    def __init__(self, headers: tuple[str, ...]):
-        # Dans le headers, on ne peut pas avoir l'ID,
-        # Il est rajouté obligatoirement à chaque table
-        if "id" in headers:
-            raise ValueError("Headers must not contain \"id\" in its values")
-        self._headers = headers
-        self._rows = {}
-    
-    def insert_row(self, values: tuple[str]) -> UUID:
-        if len(values) != len(self._headers):
-            raise ValueError("Invalid number of values: ", values)
-        id = uuid4()
-        self._rows[id] = values
-        return id
-    
-    def get_row(self, id: UUID) -> Row:
-        return Row(self._headers, id, self._rows[id])
-    
-    def get_all_rows(self) -> list[Row]:
-        rows: list[Row] = []
-        for id, values in self._rows.items():
-            row = Row(self._headers, id, values)
-            rows.append(row)
-        return rows
+class NotFoundException(Exception):
+    pass
 
 class Table:
     path: Path
-    data: TableData
+    data: None
+    _headers: tuple[str, ...]
+    _rows: dict[UUID, tuple[str, ...]]
 
     def __init__(self, datadir: Path, filename: str, headers: tuple[str, ...]):
         self.path = datadir / filename
-        self.data = TableData(headers)
+        if "uuid" in headers:
+            raise ValueError("Headers must not contain \"uuid\" in its values")
+        self._headers = headers
+        self._rows = {}
+    
+    def get_headers(self) -> list[str]:
+        return ["uuid"] + list(self._headers)
+    
+    def insert_row(self, values: tuple[str, ...]) -> UUID:
+        if len(values) != len(self._headers):
+            raise ValueError("Invalid number of values: ", values)
+        uuid = uuid4()
+        self._rows[uuid] = values
+        return uuid
+    
+    def get_row_by_uuid(self, uuid: UUID) -> Row:
+        return Row(self._headers, uuid, self._rows[uuid])
+    
+    def get_all_rows(self) -> list[Row]:
+        return [Row(self._headers, uuid, values) for uuid, values in self._rows.items()]
+    
+    def __iter__(self) -> Generator[Row, Any, Any]:
+        for row in self.get_all_rows():
+            yield row
+    
+    def __len__(self) -> int:
+        return len(self._rows)
+    
+    def get_row_by(self, field: str, value: str) -> Row:
+        try:
+            fieldindex = self._headers.index(field)
+            matches = [Row(self._headers, uuid, values) for uuid, values in self._rows.items() if values[fieldindex] == value]
+            if len(matches) > 0:
+                first_match = matches[0]
+                return first_match
+            else:
+                raise NotFoundException
+        except ValueError:
+            raise ValueError(f"Field {field} not present in table. Did you mispelled field name? Available fields: {self.get_headers()}")
+    
+    def write_to_file(self):
+        with open(self.path, "w", newline="") as file:
+            print("Writing database table ", self.path)
+            # print("Writing with headers: ", db.exemple.get_headers())
+            writer = csv.DictWriter(file, db.exemple.get_headers())
+            writer.writeheader()
+            for row in db.exemple:
+                # print("Writing ", row.to_dict())
+                writer.writerow(row.to_dict())
+    
+    def read_to_file(self):
+        with open(db.exemple.path, "r") as file:
+            print("Reading database table ", self.path)
+            data = csv.DictReader(file)
+            for row in data:
+                self._rows.clear()
+                self.insert_row() # fix later...
+                # print("Reading ", row)
 
 class Db:
     exemple: Table
@@ -104,7 +143,13 @@ class Db:
 if __name__ == "__main__":
     # tests
     db = Db()
-    print(db.exemple.path)
-    print(db.exemple.data.get_all_rows())
+    # exemple headers
+    # print(db.exemple.get_headers())
+    db.exemple.insert_row(("luis", str(10)))
+    db.exemple.insert_row(("pepito", str(12)))
+    db.exemple.insert_row(("maria", str(30)))
+    db.exemple.insert_row(("artura", str(28)))
+    db.exemple.write_to_file()
+    db.exemple.read_to_file()
 
     
