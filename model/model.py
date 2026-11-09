@@ -24,13 +24,13 @@ class Usager():
        
 
     
-    def creer_usager(self, prenom, nom, email, password, personnel):
+    def creer_usager(self, prenom, nom, email, password1, password2, personnel):
         # Modifer par des input (texte écrit)
         self.prenom = prenom
         self.nom = nom
         self.email = email
-        self.password = password
-        self.personnel = personnel
+        self.password = self.mot_de_passe_correcte(password1, password2)
+        self.is_personnel = personnel # si false == etudiant, si true == personnel  
 
 
 

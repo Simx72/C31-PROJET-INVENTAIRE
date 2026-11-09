@@ -11,7 +11,7 @@ class Controller:
     def __init__(self):
         # Properties definitions
         self.model = Model()
-        self.view = View(model=self.model, controleur=self)
+        self.view = View()
 
         self.usager = self.model.Usager(self, self.model)
 

@@ -1,5 +1,4 @@
 import math
-import helper as hp
 import tkinter as tk
 
 id_client = 0
@@ -16,24 +15,21 @@ class Usager():
     #     self.prenom = prenom
     #     self.nom = nom
     #     self.id_client = Creer_Usager()    
-
-
-
-        
-       
-
     
-    def __init__(self, prenom, nom, email, password, password2, personnel):
+    def __init__(self, prenom, nom, email, password1, password2, personnel):
         # Modifer par des input (texte écrit)
         self.prenom = prenom
         self.nom = nom
         self.email = email
-        if(password == password2):
-            self.password = password
+        self.password = self.mot_de_passe_correcte(password1, password2)
+        self.is_personnel = personnel # si false == etudiant, si true == personnel  
+
+
+    def mot_de_passe_correcte(self, password1, password2):
+        if (password1 == password2):
+            return True
         else:
             raise ValueError("Les mots de passe ne correspondent pas.")
-        
-      
-        self.is_personnel = personnel # si false == etudiant, si true == personnel  
+            return False
 
 
