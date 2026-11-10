@@ -5,8 +5,6 @@ import conf
 from uuid import uuid4, UUID
 import csv
 
-EXEMPLE_FILENAME = "exemple.csv"
-
 class Table:
     path: Path
     fields: set[str, ...]
@@ -18,6 +16,10 @@ class Table:
             raise ValueError("Table fields must not contain \"uuid\". It is automatically added")
         self.fields = {"uuid"} | fields
         self.rows = dict()
+        if self.path.exists():
+            self.read_from_file()
+        else:
+            self.write_to_file()
     
     def insert_row(self, values: dict[str, str]) -> str:
         # errors
@@ -88,7 +90,13 @@ class Db:
         # get data dir
         datadir = Db._create_and_get_datadir()
         # create tables
-        self.exemple = Table(datadir, EXEMPLE_FILENAME, {"name", "age"})
+        self.users   = Table(datadir, "users.csv",   { "username", "password" })
+        self.logs    = Table(datadir, "logs.csv",    { "type", "user", "client", "details" })
+        self.items   = Table(datadir, "items.csv",   { "id", "name", "category", "conditions", "borrow_status" })
+        self.clients = Table(datadir, "clients.csv", { "name", "type" """ (staff or student) """, "borrowed_items" })
+        
+        if __name__ == "__main__": # test tables
+            self.exemple = Table(datadir, "exemple.csv", {"name", "age"})
 
     @staticmethod
     def _get_datadir() -> Path:
@@ -132,6 +140,3 @@ if __name__ == "__main__":
     db.exemple.read_from_file()
     print("read table exemple:")
     print(dict(db.exemple))
-        
-
-    

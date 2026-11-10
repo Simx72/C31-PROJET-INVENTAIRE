@@ -1,2 +1,6 @@
+from database import Db
+
 class Model():
-    pass
+    db: Db
+    def __init__(self):
+        self.db = Db()
