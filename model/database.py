@@ -93,7 +93,7 @@ class Db:
         self.users   = Table(datadir, "users.csv",   { "username", "password" })
         self.logs    = Table(datadir, "logs.csv",    { "type", "user", "client", "details" })
         self.items   = Table(datadir, "items.csv",   { "id", "name", "category", "conditions", "borrow_status" })
-        self.clients = Table(datadir, "clients.csv", { "name", "type" """ (staff or student) """, "borrowed_items" })
+        self.clients = Table(datadir, "clients.csv", { "name", "status" """ (staff or student) """, "borrowed_items" })
         
         if __name__ == "__main__": # test tables
             self.exemple = Table(datadir, "exemple.csv", {"name", "age"})
