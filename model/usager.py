@@ -32,5 +32,3 @@ class Usager():
         else:
             raise ValueError("Les mots de passe ne correspondent pas.")
             return False
-
-
