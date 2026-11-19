@@ -10,6 +10,8 @@ class Controller:
         # Properties definitions
         self.model = Model()
         self.view = View()
+        # Start app        
+        self.view.mainloop()
 
 if __name__ == "__main__":
-    controller = Controller()
+    print("Error: Don't run this file directly!\nInstead, run:    python main.py")
