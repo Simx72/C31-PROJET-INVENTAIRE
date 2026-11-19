@@ -1,5 +1,5 @@
-from usager import Usager
-from database import Db
+from model.usager import Usager
+from model.database import Db
 
 class Model():
     db: Db

@@ -11,7 +11,5 @@ class Controller:
         self.model = Model()
         self.view = View()
 
-        self.usager = self.model.Usager(self, self.model)
-
 if __name__ == "__main__":
     controller = Controller()

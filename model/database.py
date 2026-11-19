@@ -1,7 +1,7 @@
+from model import conf
 import sys
 from pathlib import Path
 from typing import Any, Generator
-import conf
 from uuid import uuid4, UUID
 import csv
 
