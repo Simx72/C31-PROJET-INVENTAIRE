@@ -1,8 +1,6 @@
 from model.model import Model
 from view.view import View
 
-
-
 class Controller:
     # Properties - hints
     model: Model
