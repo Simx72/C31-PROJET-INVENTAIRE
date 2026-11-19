@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import font as tkfont
 
+PAGES: tuple[tk.Frame, ...] = ()
+
 class View(tk.Tk):
     container: tk.Frame
     frames: dict[str, tk.Frame]
@@ -21,7 +23,13 @@ class View(tk.Tk):
         self.container.grid_rowconfigure(0, weight=1)
         self.container.grid_columnconfigure(0, weight=1)
 
+        if len(PAGES) == 0:
+            print("Error: PAGES is empty.")
+            exit(1)
+
         self.frames = {}
+        self.set_frames(PAGES)
+        self.show_frame(PAGES[0].__name__)
 
     def set_frames(self, frames: tuple[tk.Frame, ...]):
         for F in frames:
@@ -38,41 +46,3 @@ class View(tk.Tk):
     def show_frame(self, page_name: str):
         '''Show a frame for the given page name'''
         self.frames[page_name].tkraise()
-
-
-if __name__ == "__main__":
-    # Example
-    class StartPage(tk.Frame):
-        def __init__(self, parent, controller):
-            tk.Frame.__init__(self, parent)
-            self.controller = controller
-            label = tk.Label(self, text="This is the start page", font=controller.title_font)
-            label.pack(side="top", fill="x", pady=10)
-            button1 = tk.Button(self, text="Go to Page One",
-                                command=lambda: controller.show_frame("PageOne"))
-            button2 = tk.Button(self, text="Go to Page Two",
-                                command=lambda: controller.show_frame("PageTwo"))
-            button1.pack()
-            button2.pack()
-    class PageOne(tk.Frame):
-        def __init__(self, parent, controller):
-            tk.Frame.__init__(self, parent)
-            self.controller = controller
-            label = tk.Label(self, text="This is page 1", font=controller.title_font)
-            label.pack(side="top", fill="x", pady=10)
-            button = tk.Button(self, text="Go to the start page",
-                            command=lambda: controller.show_frame("StartPage"))
-            button.pack()
-    class PageTwo(tk.Frame):
-        def __init__(self, parent, controller):
-            tk.Frame.__init__(self, parent)
-            self.controller = controller
-            label = tk.Label(self, text="This is page 2", font=controller.title_font)
-            label.pack(side="top", fill="x", pady=10)
-            button = tk.Button(self, text="Go to the start page",
-                            command=lambda: controller.show_frame("StartPage"))
-            button.pack()
-    app = View()
-    app.set_frames((StartPage, PageOne, PageTwo))
-    app.show_frame("StartPage")
-    app.mainloop()
