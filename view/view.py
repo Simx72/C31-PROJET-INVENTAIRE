@@ -1,14 +1,24 @@
+from typing import TYPE_CHECKING 
+from view.pages.login import Login
 import tkinter as tk
 from tkinter import font as tkfont
 
-PAGES: tuple[tk.Frame, ...] = ()
+if TYPE_CHECKING:
+    from controller import Controller
+
+PAGES: tuple[tk.Frame, ...] = (Login,)
 
 class View(tk.Tk):
+    controller: Controller
     container: tk.Frame
     frames: dict[str, tk.Frame]
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, controller: Controller, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
+        
+        self.controller = controller
+
+        self.geometry("1200x800")
 
         # Source - https://stackoverflow.com/a/7557028
         # Posted by Bryan Oakley, modified by community. See post 'Timeline' for change history
@@ -34,7 +44,7 @@ class View(tk.Tk):
     def set_frames(self, frames: tuple[tk.Frame, ...]):
         for F in frames:
             page_name = F.__name__
-            frame = F(parent=self.container, controller=self)
+            frame = F(parent=self.container, controller=self.controller)
             self.frames[page_name] = frame
 
             # put all of the pages in the same location;
@@ -46,3 +56,4 @@ class View(tk.Tk):
     def show_frame(self, page_name: str):
         '''Show a frame for the given page name'''
         self.frames[page_name].tkraise()
+    
