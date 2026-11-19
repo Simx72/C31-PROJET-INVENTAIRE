@@ -54,7 +54,7 @@ class Table:
         return [row for row in self.get_all_rows() if row[field] == value]
     
     def get_row_by(self, field: str, value: str) -> dict[str, str]:
-        matches = self.get_rows_by(field)
+        matches = self.get_rows_by(field, value)
         if len(matches) > 0:
             first_match = matches[0]
             return first_match
@@ -64,12 +64,12 @@ class Table:
     def write_to_file(self):
         with open(self.path, "w", newline="") as file:
             print("Writing database table ", self.path)
-            writer = csv.DictWriter(file, db.exemple.fields)
+            writer = csv.DictWriter(file, self.fields)
             writer.writeheader()
             writer.writerows(self.rows.values())
     
     def read_from_file(self):
-        with open(db.exemple.path, "r") as file:
+        with open(self.path, "r") as file:
             print("Reading database table ", self.path)
             data = csv.DictReader(file)
             self.rows.clear()
@@ -134,6 +134,11 @@ if __name__ == "__main__":
     db.exemple.insert_row({ "name": "pepito", "age": str(12) })
     db.exemple.insert_row({ "name": "maria", "age": str(30) })
     db.exemple.insert_row({ "name": "artura", "age": str(28) })
+
+    luis = db.exemple.get_row_by( "name", "luis" )
+
+    print(luis["age"])
+
     print("created table exemple:")
     print(dict(db.exemple))
     db.exemple.write_to_file()
