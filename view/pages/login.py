@@ -7,7 +7,7 @@ class Login(tk.Frame):
     #self.label.pack()
     #self.pack()
 
-    # INSCIRPTION
+    # Connexion (Pas inscriptio (si nouveau client => harcoder dans Client.txt ou Personnel.txt))
 
     # titre
     self.label_titre = tk.Label(parent, text="Connexion", font=("Arial", 16, "bold"))
@@ -43,11 +43,11 @@ class Login(tk.Frame):
     self.champ_mdp1 = tk.Entry(parent, width=25, show="*")
     self.champ_mdp1.pack(pady=(0, 15))
 
-    # mot de passe2 (a terminer (if-else)(si les 2 sont correcte))
-    self.label_mdp2 = tk.Label(parent, text="Retapez votre mot de passe")
-    self.label_mdp2.pack()
-    self.champ_mdp2 = tk.Entry(parent, width=25, show="*")
-    self.champ_mdp2.pack(pady=(0, 15))
+    # # mot de passe2 (a terminer (if-else)(si les 2 sont correcte))
+    # self.label_mdp2 = tk.Label(parent, text="Retapez votre mot de passe")
+    # self.label_mdp2.pack()
+    # self.champ_mdp2 = tk.Entry(parent, width=25, show="*")
+    # self.champ_mdp2.pack(pady=(0, 15))
 
     self.bouton_connexion = tk.Button(parent, text="Connexion", command=self.connexion)
     self.bouton_connexion.pack(fill="x", ipady=4)
@@ -59,9 +59,9 @@ class Login(tk.Frame):
     courriel = self.champ_courriel.get().strip()
     matricule = self.champ_matricule.get().strip()
     mot_de_passe1 = self.champ_mdp1.get().strip()
-    mot_de_passe2 = self.champ_mdp2.get().strip()
-
-    self.controller.traiter_connexion(prenom, nom, courriel, matricule, mot_de_passe1, mot_de_passe2)
+    # mot_de_passe2 = self.champ_mdp2.get().strip()
+                                                                                    # mot_de_passe2
+    self.controller.traiter_connexion(prenom, nom, courriel, matricule, mot_de_passe1)
 
 
 # tests
