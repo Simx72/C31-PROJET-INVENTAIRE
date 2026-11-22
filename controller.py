@@ -1,5 +1,10 @@
-from model.model import Model
+#from model import Model
+from model import model
+
+import model.model as Model
+from model.usager import Usager
 from view.view import View
+from view.pages.login import Login
 
 
 
@@ -13,7 +18,10 @@ class Controller:
         self.model = Model()
         self.view = View()
 
-        self.usager = self.model.Usager(self, self.model)
+        self.usager = Usager(self, self.model)
+
+        # Ouvrir Login
+        self.login = Login()
 
 if __name__ == "__main__":
     controller = Controller()

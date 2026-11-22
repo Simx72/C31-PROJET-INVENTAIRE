@@ -1,87 +1,114 @@
 import sys
 from pathlib import Path
 from typing import Any, Generator
-import conf
+#import conf
 from uuid import uuid4, UUID
 import csv
 
+EXEMPLE_FILENAME = "exemple.csv"
+
+
+class Row:
+    _headers: tuple[str, ...]
+    _values: tuple[str, ...]
+
+    def __init__(self, headers: tuple[str, ...], id: UUID, values: tuple[str, ...]) -> None:
+        self._headers = ("uuid",) + headers
+        self._values = (str(id),) + values
+
+    def get_str(self, key: str) -> str:
+        try:
+            index = self._headers.index(key)
+            return self._values[index]
+        except ValueError:
+            raise ValueError(f"No key {key} in this table. Did you mispelled the column name ?")
+
+    def get_int(self, key: str) -> int:
+        return int(self.get_str(key))
+
+    def get_float(self, key: str) -> float:
+        return float(self.get_str(key))
+
+    def to_dict(self) -> dict[str, str]:
+        my_dict: dict[str, str] = {}
+        for header, value in list(zip(self._headers, self._values)):
+            my_dict[header] = value
+        return my_dict
+
+
+class NotFoundException(Exception):
+    pass
+
+
 class Table:
     path: Path
-    fields: set[str, ...]
-    rows: dict[UUID, dict[str, str]]
+    data: None
+    _headers: tuple[str, ...]
+    _rows: dict[UUID, tuple[str, ...]]
 
-    def __init__(self, datadir: Path, filename: str, fields: set[str]):
+    def __init__(self, datadir: Path, filename: str, headers: tuple[str, ...]):
         self.path = datadir / filename
-        if "uuid" in fields:
-            raise ValueError("Table fields must not contain \"uuid\". It is automatically added")
-        self.fields = {"uuid"} | fields
-        self.rows = dict()
-        if self.path.exists():
-            self.read_from_file()
-        else:
-            self.write_to_file()
-    
-    def insert_row(self, values: dict[str, str]) -> str:
-        # errors
-        user_fields = self.fields.difference({"uuid"});
-        invalid = set(values.keys()).difference(user_fields)
-        if len(invalid) > 0:
-            raise ValueError(f"Invalid fields provided: {invalid}")
-        missing = user_fields.difference(values.keys())
-        if len(missing) > 0:
-            raise ValueError(f"Missing fields: {missing}")
-        # save new record
+        if "uuid" in headers:
+            raise ValueError("Headers must not contain \"uuid\" in its values")
+        self._headers = headers
+        self._rows = {}
+
+    def get_headers(self) -> list[str]:
+        return ["uuid"] + list(self._headers)
+
+    def insert_row(self, values: tuple[str, ...]) -> UUID:
+        if len(values) != len(self._headers):
+            raise ValueError("Invalid number of values: ", values)
         uuid = uuid4()
-        self.rows[uuid] = values | { "uuid": str(uuid) }
-        self.write_to_file()
-        return str(uuid)
-    
-    def get_row_by_uuid(self, uuid: str) -> dict[str, str]:
-        return self.rows[UUID(uuid)]
-    
-    def get_all_rows(self) -> list[dict[str, str]]:
-        self.read_from_file()
-        return self.rows.values()
-    
-    def __iter__(self) -> Generator[dict[str, str], Any, Any]:
+        self._rows[uuid] = values
+        return uuid
+
+    def get_row_by_uuid(self, uuid: UUID) -> Row:
+        return Row(self._headers, uuid, self._rows[uuid])
+
+    def get_all_rows(self) -> list[Row]:
+        return [Row(self._headers, uuid, values) for uuid, values in self._rows.items()]
+
+    def __iter__(self) -> Generator[Row, Any, Any]:
         for row in self.get_all_rows():
             yield row
-    
+
     def __len__(self) -> int:
-        return len(self.rows)
-    
-    def get_rows_by(self, field: str, value: str) -> list[dict[str, str]]:
-        return [row for row in self.get_all_rows() if row[field] == value]
-    
-    def get_row_by(self, field: str, value: str) -> dict[str, str]:
-        matches = self.get_rows_by(field, value)
-        if len(matches) > 0:
-            first_match = matches[0]
-            return first_match
-        else:
-            return None
+        return len(self._rows)
+
+    def get_row_by(self, field: str, value: str) -> Row:
+        try:
+            fieldindex = self._headers.index(field)
+            matches = [Row(self._headers, uuid, values) for uuid, values in self._rows.items() if
+                       values[fieldindex] == value]
+            if len(matches) > 0:
+                first_match = matches[0]
+                return first_match
+            else:
+                raise NotFoundException
+        except ValueError:
+            raise ValueError(
+                f"Field {field} not present in table. Did you mispelled field name? Available fields: {self.get_headers()}")
 
     def write_to_file(self):
         with open(self.path, "w", newline="") as file:
             print("Writing database table ", self.path)
-            writer = csv.DictWriter(file, self.fields)
+            # print("Writing with headers: ", db.exemple.get_headers())
+            writer = csv.DictWriter(file, db.exemple.get_headers())
             writer.writeheader()
-            writer.writerows(self.rows.values())
-    
-    def read_from_file(self):
-        with open(self.path, "r") as file:
+            for row in db.exemple:
+                # print("Writing ", row.to_dict())
+                writer.writerow(row.to_dict())
+
+    def read_to_file(self):
+        with open(db.exemple.path, "r") as file:
             print("Reading database table ", self.path)
             data = csv.DictReader(file)
-            self.rows.clear()
             for row in data:
-                uuid = UUID(row["uuid"])
-                self.rows[uuid] = { key:value for key, value in row.items() }
+                self._rows.clear()
+                self.insert_row()  # fix later...
+                # print("Reading ", row)
 
-    def keys(self) -> tuple[UUID]:
-        return self.rows.keys()
-
-    def __getitem__(self, key: UUID) -> dict[str, str]:
-        return self.rows[key]
 
 class Db:
     exemple: Table
@@ -90,13 +117,7 @@ class Db:
         # get data dir
         datadir = Db._create_and_get_datadir()
         # create tables
-        self.users   = Table(datadir, "users.csv",   { "username", "password" })
-        self.logs    = Table(datadir, "logs.csv",    { "type", "user", "client", "details" })
-        self.items   = Table(datadir, "items.csv",   { "id", "name", "category", "conditions", "borrow_status" })
-        self.clients = Table(datadir, "clients.csv", { "name", "status" """ (staff or student) """, "borrowed_items" })
-        
-        if __name__ == "__main__": # test tables
-            self.exemple = Table(datadir, "exemple.csv", {"name", "age"})
+        self.exemple = Table(datadir, EXEMPLE_FILENAME, ("name", "age"))
 
     @staticmethod
     def _get_datadir() -> Path:
@@ -112,6 +133,7 @@ class Db:
         """
 
         home = Path.home()
+
         if sys.platform == "win32":
             return home / "AppData/Roaming"
         elif sys.platform == "linux":
@@ -121,27 +143,20 @@ class Db:
 
     @staticmethod
     def _create_and_get_datadir() -> Path:
-        my_datadir = Db._get_datadir() / conf.APP_NAME
+        my_datadir = Db._get_datadir() / "projet-inventaire"
         my_datadir.mkdir(parents=True, exist_ok=True)
         return my_datadir
+
 
 if __name__ == "__main__":
     # tests
     db = Db()
     # exemple headers
     # print(db.exemple.get_headers())
-    db.exemple.insert_row({ "name": "luis", "age": str(10) })
-    db.exemple.insert_row({ "name": "pepito", "age": str(12) })
-    db.exemple.insert_row({ "name": "maria", "age": str(30) })
-    db.exemple.insert_row({ "name": "artura", "age": str(28) })
-
-    luis = db.exemple.get_row_by( "name", "luis" )
-
-    print(luis["age"])
-
-    print("created table exemple:")
-    print(dict(db.exemple))
+    db.exemple.insert_row(("luis", str(10)))
+    db.exemple.insert_row(("pepito", str(12)))
+    db.exemple.insert_row(("maria", str(30)))
+    db.exemple.insert_row(("artura", str(28)))
     db.exemple.write_to_file()
-    db.exemple.read_from_file()
-    print("read table exemple:")
-    print(dict(db.exemple))
+    db.exemple.read_to_file()
+

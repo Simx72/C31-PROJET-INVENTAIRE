@@ -21,14 +21,14 @@ class Usager():
         self.prenom = prenom
         self.nom = nom
         self.email = email
-        self.password = self.mot_de_passe_correcte(password1, password2)
+        self.password = password1
         self.is_personnel = personnel # si false == etudiant, si true == personnel  
 
 
-    def mot_de_passe_correcte(self, password1, password2):
-        if (password1 == password2):
-            self.password = password1
-            return True
-        else:
-            raise ValueError("Les mots de passe ne correspondent pas.")
-            return False
+    # def mot_de_passe_correcte(self, password1, password2):
+    #     if (password1 == password2):
+    #         self.password = password1
+    #         return True
+    #     else:
+    #         raise ValueError("Les mots de passe ne correspondent pas.")
+    #         return False
