@@ -34,61 +34,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.1582298307735472" />
-      <entry key="MS500" value="1.8757632515179132" />
-      <entry key="S2" value="4.3017805950889745" />
-      <entry key="S5" value="7.523195189966028" />
-      <entry key="S10" value="10.613186532118009" />
-      <entry key="S30" value="16.944367522698478" />
-      <entry key="S60" value="26.478134621976636" />
-      <entry key="M2" value="41.47672281077547" />
-      <entry key="M5" value="59.69705935054917" />
-      <entry key="M10" value="68.43354242772476" />
-      <entry key="M15" value="71.73654906154474" />
-      <entry key="M30" value="76.19214233149883" />
-      <entry key="H1" value="100.61449057450353" />
-      <entry key="H2" value="216.83499444432647" />
-      <entry key="H4" value="444.4733286502815" />
-      <entry key="D1" value="946.587982317662" />
-      <entry key="W1" value="1090.6079675171036" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.000000144587637" />
+      <entry key="S60" value="1.0031303746335316" />
+      <entry key="M2" value="1.6248219318892096" />
+      <entry key="M5" value="19.076207527729494" />
+      <entry key="M10" value="59.10724195297305" />
+      <entry key="M15" value="87.27470965920632" />
+      <entry key="M30" value="130.1172112192495" />
+      <entry key="H1" value="177.10932410476843" />
+      <entry key="H2" value="299.6914549306604" />
+      <entry key="H4" value="530.9782019456352" />
+      <entry key="D1" value="1051.5749459705519" />
+      <entry key="W1" value="1203.1374548359274" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="4.069787024451427E-98" />
-      <entry key="S2" value="4.491515685670741E-25" />
-      <entry key="S5" value="1.823715831886051E-10" />
-      <entry key="S10" value="1.3504502330282476E-5" />
-      <entry key="S30" value="0.023813662523764146" />
-      <entry key="S60" value="0.15431676034625705" />
-      <entry key="M2" value="0.392831720137589" />
-      <entry key="M5" value="0.6881492160719886" />
-      <entry key="M10" value="0.829547633055858" />
-      <entry key="M15" value="0.8828957790526697" />
-      <entry key="M30" value="0.9707235852217603" />
-      <entry key="H1" value="2.1276343971017826" />
-      <entry key="H2" value="8.83122123489774" />
-      <entry key="H4" value="22.304192651294894" />
-      <entry key="D1" value="51.35452402350174" />
-      <entry key="W1" value="59.512434738927844" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="3.4751705395325573E-124" />
+      <entry key="S5" value="4.1366091080487087E-50" />
+      <entry key="S10" value="2.082463952253726E-25" />
+      <entry key="S30" value="7.681878334165373E-9" />
+      <entry key="S60" value="1.2853975381471033E-4" />
+      <entry key="M2" value="0.01911168528655976" />
+      <entry key="M5" value="0.4398223367997894" />
+      <entry key="M10" value="1.3064980202759133" />
+      <entry key="M15" value="1.8902736835416964" />
+      <entry key="M30" value="2.7651202414574527" />
+      <entry key="H1" value="4.252548561868818" />
+      <entry key="H2" value="10.71080761263922" />
+      <entry key="H4" value="24.04723561467809" />
+      <entry key="D1" value="53.88985007777729" />
+      <entry key="W1" value="62.43571336811377" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.0827276682971503" />
-      <entry key="MS500" value="1.8527175988455853" />
-      <entry key="S2" value="4.290007402670256" />
-      <entry key="S5" value="7.51532573005288" />
-      <entry key="S10" value="10.60771910302952" />
-      <entry key="S30" value="16.96317642516329" />
-      <entry key="S60" value="26.623253714520338" />
-      <entry key="M2" value="41.8588616618805" />
-      <entry key="M5" value="60.377895658749836" />
-      <entry key="M10" value="69.25870390165846" />
-      <entry key="M15" value="72.61633673991619" />
-      <entry key="M30" value="77.16110329291246" />
-      <entry key="H1" value="102.73927270557343" />
-      <entry key="H2" value="225.65923149451055" />
-      <entry key="H4" value="466.7686571142397" />
-      <entry key="D1" value="997.9391690355197" />
-      <entry key="W1" value="1150.1198523785501" />
+      <entry key="MS100" value="0.9330329915368074" />
+      <entry key="MS500" value="0.9862327044933592" />
+      <entry key="S2" value="0.9965402628278678" />
+      <entry key="S5" value="0.9986146661010289" />
+      <entry key="S10" value="0.9993070929904525" />
+      <entry key="S30" value="0.9997691295624256" />
+      <entry key="S60" value="1.0031405148105654" />
+      <entry key="M2" value="1.6436401673626635" />
+      <entry key="M5" value="19.513512800766488" />
+      <entry key="M10" value="60.40977676644527" />
+      <entry key="M15" value="89.16107428048164" />
+      <entry key="M30" value="132.87935361289772" />
+      <entry key="H1" value="181.35847411174885" />
+      <entry key="H2" value="310.3953775167032" />
+      <entry key="H4" value="555.0167138917351" />
+      <entry key="D1" value="1105.4614341763754" />
+      <entry key="W1" value="1265.5726113351575" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -128,32 +128,7 @@
       <recent name="C:\Users\mlussier\Desktop\C31-PROJET-INVENTAIRE\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.login">
-    <configuration name="controller" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="C31-PROJET-INVENTAIRE" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="RUN_AS_SCRIPT" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/controller.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.liste_clients">
     <configuration name="data_liste_client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C31-PROJET-INVENTAIRE" />
       <option name="ENV_FILES" value="" />
@@ -171,31 +146,6 @@
       <option name="RUN_TOOL" value="" />
       <option name="RUN_AS_SCRIPT" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/data_liste_client.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="C31-PROJET-INVENTAIRE" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="RUN_AS_SCRIPT" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/database.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -229,6 +179,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="liste_clients" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="C31-PROJET-INVENTAIRE" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/view/pages" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/view/pages/liste_clients.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C31-PROJET-INVENTAIRE" />
       <option name="ENV_FILES" value="" />
@@ -254,13 +229,38 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="usager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="C31-PROJET-INVENTAIRE" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="false" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/usager.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.liste_clients" />
+        <item itemvalue="Python.usager" />
         <item itemvalue="Python.login" />
         <item itemvalue="Python.data_liste_client" />
         <item itemvalue="Python.liste_client" />
-        <item itemvalue="Python.database" />
-        <item itemvalue="Python.controller" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +282,7 @@
       <workItem from="1795121024707" duration="267000" />
       <workItem from="1795135669556" duration="3235000" />
       <workItem from="1795201411818" duration="8695000" />
-      <workItem from="1795349159167" duration="4197000" />
+      <workItem from="1795349159167" duration="5879000" />
     </task>
     <task id="LOCAL-00001" summary="login: interface_initial">
       <option name="closed" value="true" />
