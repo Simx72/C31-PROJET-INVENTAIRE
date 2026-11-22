@@ -15,8 +15,8 @@ class Usager():
     #     self.prenom = prenom
     #     self.nom = nom
     #     self.id_client = Creer_Usager()    
-    
-    def __init__(self, prenom, nom, email, password1, password2, personnel):
+                                                    #password2
+    def __init__(self, prenom, nom, email, password1, personnel):
         # Modifer par des input (texte écrit)
         self.prenom = prenom
         self.nom = nom

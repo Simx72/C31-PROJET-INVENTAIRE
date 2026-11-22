@@ -1,2 +1,2 @@
-class Clients:
+class Usager():
     pass
