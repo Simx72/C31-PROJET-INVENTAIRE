@@ -4,11 +4,7 @@ class Login(tk.Frame):
   def __init__(self, parent):
     tk.Frame.__init__(self, parent)
 
-    #self.label = tk.Label(self, text="Bonjourr. C'est le Login")
-    #self.label.pack()
-    #self.pack()
-
-    # Connexion (Pas inscriptio (si nouveau client => harcoder dans Client.txt ou Personnel.txt))
+    #
 
     # titre
     self.label_titre = tk.Label(parent, text="Connexion", font=("Arial", 16, "bold"))

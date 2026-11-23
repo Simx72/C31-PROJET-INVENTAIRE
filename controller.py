@@ -44,6 +44,11 @@ class Controller:
     # # def traiter_connexion
 
     def __init__(self):
+        #Properties definitions
+        self.model = Model
+        self.view = View
+
+
         self.usager = None                      # (JS ex: form on_sumbit=traiter_connexion()) prend les informations que tas recu, met les dans traiter_connexion
         self.root = tk.Tk()                     # |
         self.root.geometry("400x300")           # v
@@ -52,8 +57,10 @@ class Controller:
         self.root.mainloop()
 
     def traiter_connexion(self, prenom, nom, courriel, matricule, mot_de_passe1):
-        self.usager = Usager(prenom, nom, courriel, matricule, mot_de_passe1)
+        self.usager = Usager(prenom, nom, courriel, matricule, mot_de_passe1) # créer un usager
         print(self.usager.get_mot_de_passe1()) # JAVA (avec let methode get)
+
+
 
 
 if __name__ == "__main__":
