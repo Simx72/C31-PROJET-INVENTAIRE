@@ -13,9 +13,13 @@ class Controller:
         # Start app        
         self.view.mainloop()
     
-    def handle_connection(self, name, email, matricule, mot_de_passe1):
-        self.model.usager(name, email, matricule, mot_de_passe1,)
-        print("Handling connection...")
+    def handle_connection(self, username: str, password: str) -> None:
+        # valid credentials
+        valid = self.model.validate_credentials(username, password)
+        print("login was valid ? ", valid)
+        # change page
+        if valid:
+            self.view.show_frame("MenuPrincipal")
 
     def get_client_list(self):
         return  self.model.get_client_list()
