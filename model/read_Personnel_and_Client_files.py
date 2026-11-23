@@ -207,16 +207,34 @@ class Personnel:
         for ligne in self.lignesC:
             print(ligne)
 
-    def liste_employer(self):
-        self.liste_personnel = []
-        self.liste_client = []
-
         for i in range(0, 5):  # 0 = premon, 4 = mot_de_passe1
             self.liste_personnel.append(usager.Creer_Usager(self.lignesP[i].strip().split(",")))
 
 
         for i in range(0, 5):  # 0 = premon, 4 = mot_de_passe1
             self.liste_client.append(usager.Creer_Usager(self.lignesC[i].strip().split(",")))
+
+
+    def compare_inputs_to_lists(self):
+        for employers in self.liste_personnel:
+            #prend ligne par ligne de la liste des employer
+            #compare usager avec la ligne
+            #si vrai = connexion valide
+            #si pas employer/personnel = ne fait rien (pas de connexion)
+
+            for i in range(0, len(self.liste_personnel)):
+                if(employers.prenom == self.liste_personnel[i].prenom and
+                employers.nom == self.liste_personnel[i].nom and
+                employers.courriel == self.liste_personnel[i].courriel and
+                employers.matricule == self.liste_personnel[i].matricule and
+                employers.mot_de_passe1 == self.liste_personnel[i].mot_de_passe1):
+                    print("yes :)")
+                else:
+                    print("no :(")
+
+
+
+
 
 
 
