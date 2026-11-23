@@ -13,8 +13,12 @@ class Controller:
         # Start app        
         self.view.mainloop()
     
-    def handle_connection(self, prenom, nom, courriel, matricule, mot_de_passe1, mot_de_passe2):
+    def handle_connection(self, name, email, matricule, mot_de_passe1):
+        self.model.usager(name, email, matricule, mot_de_passe1,)
         print("Handling connection...")
+
+    def get_client_list(self):
+        return  self.model.get_client_list()
 
 if __name__ == "__main__":
     print("Error: Don't run this file directly!\nInstead, run:    python main.py")
