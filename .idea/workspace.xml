@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc58891e-fcb4-439c-9f41-bbe793d1cbe6" name="Changes" comment="database: FIX! Logic wasnt working">
-      <change afterPath="$PROJECT_DIR$/view/pages/menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/model/Client.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/model/Personnel.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/read_Personnel_and_Client_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/read_Personnel_and_Client_files.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/usager.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/usager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/pages/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/login.py" afterDir="false" />
@@ -43,61 +41,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.0801126431089267" />
-      <entry key="MS500" value="4.21433798838979" />
-      <entry key="S2" value="7.433874161674988" />
-      <entry key="S5" value="9.309437145110484" />
-      <entry key="S10" value="10.401810154886608" />
-      <entry key="S30" value="13.234663253818496" />
-      <entry key="S60" value="19.111277355968525" />
-      <entry key="M2" value="31.90229803685976" />
-      <entry key="M5" value="74.72080963897176" />
-      <entry key="M10" value="134.92184411526785" />
-      <entry key="M15" value="182.61288206381303" />
-      <entry key="M30" value="292.96219415957484" />
-      <entry key="H1" value="431.9685632916994" />
-      <entry key="H2" value="616.5083603434844" />
-      <entry key="H4" value="890.0409735787573" />
-      <entry key="D1" value="1520.7001238215878" />
-      <entry key="W1" value="1713.1982594345075" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.000000000009489" />
+      <entry key="S5" value="1.0000863674197624" />
+      <entry key="S10" value="1.0201412266753453" />
+      <entry key="S30" value="1.801248922475335" />
+      <entry key="S60" value="3.1395294539150345" />
+      <entry key="M2" value="5.753632762167331" />
+      <entry key="M5" value="19.843425736777053" />
+      <entry key="M10" value="46.26774715145479" />
+      <entry key="M15" value="70.8566349264021" />
+      <entry key="M30" value="150.66065665110472" />
+      <entry key="H1" value="335.1849851663072" />
+      <entry key="H2" value="642.588178825456" />
+      <entry key="H4" value="1052.3588758646392" />
+      <entry key="D1" value="1976.946194599927" />
+      <entry key="W1" value="2270.6576733391794" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="3.842882936559289E-53" />
-      <entry key="MS500" value="3.3175862437515133E-11" />
-      <entry key="S2" value="0.003152289815808462" />
-      <entry key="S5" value="0.15857070730187822" />
-      <entry key="S10" value="0.6505199200535903" />
-      <entry key="S30" value="1.8051988693636176" />
-      <entry key="S60" value="2.748821668530935" />
-      <entry key="M2" value="4.552527863432342" />
-      <entry key="M5" value="9.100967876069397" />
-      <entry key="M10" value="15.309635788949237" />
-      <entry key="M15" value="20.312283274362297" />
-      <entry key="M30" value="29.84726827025283" />
-      <entry key="H1" value="38.650433295653784" />
-      <entry key="H2" value="48.65612128086554" />
-      <entry key="H4" value="63.84117428968194" />
-      <entry key="D1" value="99.26838405095027" />
-      <entry key="W1" value="110.0079335722071" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="3.1374383307144634E-117" />
+      <entry key="S2" value="7.484172684160355E-30" />
+      <entry key="S5" value="2.236956401880457E-12" />
+      <entry key="S10" value="1.495645814344404E-6" />
+      <entry key="S30" value="0.011439112723834776" />
+      <entry key="S60" value="0.10868823758142532" />
+      <entry key="M2" value="0.36970493290490514" />
+      <entry key="M5" value="1.0824690071563117" />
+      <entry key="M10" value="2.6426652841817346" />
+      <entry key="M15" value="4.8406424206639524" />
+      <entry key="M30" value="15.197262244671158" />
+      <entry key="H1" value="39.862552123755925" />
+      <entry key="H2" value="74.3973831956109" />
+      <entry key="H4" value="111.22312697219871" />
+      <entry key="D1" value="178.802229802616" />
+      <entry key="W1" value="198.37219537255325" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.0312991178976243" />
-      <entry key="MS500" value="4.189760821375688" />
-      <entry key="S2" value="7.426663989513077" />
-      <entry key="S5" value="9.449392493472835" />
-      <entry key="S10" value="11.019356036572379" />
-      <entry key="S30" value="14.974618473735253" />
-      <entry key="S60" value="21.747859640831347" />
-      <entry key="M2" value="36.30413229352782" />
-      <entry key="M5" value="83.66713689629178" />
-      <entry key="M10" value="150.1033680202736" />
-      <entry key="M15" value="202.8150288850827" />
-      <entry key="M30" value="322.731051832654" />
-      <entry key="H1" value="470.5688708763401" />
-      <entry key="H2" value="665.1324632437937" />
-      <entry key="H4" value="953.8604224247952" />
-      <entry key="D1" value="1619.9626544135378" />
-      <entry key="W1" value="1823.2052609903644" />
+      <entry key="MS100" value="0.9592641193252643" />
+      <entry key="MS500" value="0.9917167307382933" />
+      <entry key="S2" value="0.9979227190066735" />
+      <entry key="S5" value="0.9992446244550749" />
+      <entry key="S10" value="1.0183266408416367" />
+      <entry key="S30" value="1.7917297129839784" />
+      <entry key="S60" value="3.218923191244783" />
+      <entry key="M2" value="6.095128211495989" />
+      <entry key="M5" value="20.898787023833783" />
+      <entry key="M10" value="48.875780062431964" />
+      <entry key="M15" value="75.65653998802989" />
+      <entry key="M30" value="165.80699871213517" />
+      <entry key="H1" value="374.99237199508985" />
+      <entry key="H2" value="716.9379175840808" />
+      <entry key="H4" value="1163.546844732428" />
+      <entry key="D1" value="2155.738808851289" />
+      <entry key="W1" value="2469.02833444857" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -119,6 +117,7 @@
     "Python.liste_client.executor": "Run",
     "Python.login.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.menu.executor": "Run",
     "Python.read_Personnel_and_Client_files.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -139,7 +138,7 @@
       <recent name="C:\Users\mlussier\Desktop\C31-PROJET-INVENTAIRE\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.read_Personnel_and_Client_files">
+  <component name="RunManager" selected="Python.controller">
     <configuration name="controller" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C31-PROJET-INVENTAIRE" />
       <option name="ENV_FILES" value="" />
@@ -215,6 +214,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="menu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="C31-PROJET-INVENTAIRE" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/view/pages" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/view/pages/menu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="read_Personnel_and_Client_files" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="C31-PROJET-INVENTAIRE" />
       <option name="ENV_FILES" value="" />
@@ -240,38 +264,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="usager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="C31-PROJET-INVENTAIRE" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="RUN_AS_SCRIPT" value="false" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/usager.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.read_Personnel_and_Client_files" />
         <item itemvalue="Python.controller" />
         <item itemvalue="Python.login" />
+        <item itemvalue="Python.read_Personnel_and_Client_files" />
+        <item itemvalue="Python.menu" />
         <item itemvalue="Python.liste_clients" />
-        <item itemvalue="Python.usager" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +293,7 @@
       <workItem from="1795135669556" duration="3235000" />
       <workItem from="1795201411818" duration="8695000" />
       <workItem from="1795349159167" duration="7748000" />
-      <workItem from="1795437968863" duration="2611000" />
+      <workItem from="1795437968863" duration="10828000" />
     </task>
     <task id="LOCAL-00001" summary="login: interface_initial">
       <option name="closed" value="true" />
@@ -345,12 +344,13 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/C31_PROJET_INVENTAIRE$main.coverage" NAME="main Coverage Results" MODIFIED="1795209278228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/C31_PROJET_INVENTAIRE$login.coverage" NAME="login Coverage Results" MODIFIED="1795439167619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view/pages" />
+    <SUITE FILE_PATH="coverage/C31_PROJET_INVENTAIRE$login.coverage" NAME="login Coverage Results" MODIFIED="1795448250271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view/pages" />
     <SUITE FILE_PATH="coverage/C31_PROJET_INVENTAIRE$liste_client.coverage" NAME="liste_client Coverage Results" MODIFIED="1795351658003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view/pages" />
-    <SUITE FILE_PATH="coverage/C31_PROJET_INVENTAIRE$read_Personnel_and_Client_files.coverage" NAME="read_Personnel_and_Client_files Coverage Results" MODIFIED="1795440486911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/C31_PROJET_INVENTAIRE$read_Personnel_and_Client_files.coverage" NAME="read_Personnel_and_Client_files Coverage Results" MODIFIED="1795441564397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
     <SUITE FILE_PATH="coverage/C31_PROJET_INVENTAIRE$data_personnel.coverage" NAME="data_personnel Coverage Results" MODIFIED="1795201918507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
     <SUITE FILE_PATH="coverage/C31_PROJET_INVENTAIRE$database.coverage" NAME="database Coverage Results" MODIFIED="1795349296677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
-    <SUITE FILE_PATH="coverage/C31_PROJET_INVENTAIRE$controller.coverage" NAME="controller Coverage Results" MODIFIED="1795439685876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/C31_PROJET_INVENTAIRE$controller.coverage" NAME="controller Coverage Results" MODIFIED="1795448728690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/C31_PROJET_INVENTAIRE$menu.coverage" NAME="menu Coverage Results" MODIFIED="1795440750393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view/pages" />
     <SUITE FILE_PATH="coverage/C31_PROJET_INVENTAIRE$data_liste_client.coverage" NAME="data_liste_client Coverage Results" MODIFIED="1795351744180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
   </component>
 </project>

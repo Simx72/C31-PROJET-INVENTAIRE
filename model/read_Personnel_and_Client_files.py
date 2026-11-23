@@ -173,17 +173,18 @@
 
 
 
-from usager import Usager
-import view.pages.menu as login
+# from usager import Usager
+import model.usager as usager
+import view.pages.login as login
 # import controller as controller
 
 class Personnel:
     def __init__(self):
-        self.personel = Usager(login.Login.get_prenom(),
-                        login.Login.get_nom(),
-                        login.Login.get_courriel(),
-                        login.Login.get_matricule(),
-                        login.Login.get_mot_de_passe())
+        self.personel = usager.Usager(login.Login.get_prenom(self),
+                        login.Login.get_nom(self),
+                        login.Login.get_courriel(self),
+                        login.Login.get_matricule(self),
+                        login.Login.get_mot_de_passe(self))
 
 
     def lire_Personnel_et_Client(self):
@@ -193,3 +194,6 @@ class Personnel:
         contenu = fPersonnel.read()
         print(contenu)
         fPersonnel.close()
+
+# if __name__ == '__main__':
+#     personnel = Personnel()
