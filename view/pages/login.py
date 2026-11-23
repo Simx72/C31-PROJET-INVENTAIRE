@@ -6,7 +6,7 @@ if TYPE_CHECKING:
 
 class Login(tk.Frame):
     controller: Controller
-    def __init__(self, parent: tk.Frame, controller: Controller):
+    def __init__(self, parent: tk.Tk, controller: Controller):
         tk.Frame.__init__(self, parent)
         self.controller = controller
 
@@ -33,14 +33,15 @@ class Login(tk.Frame):
 
     def connexion(self):
         #https://www.w3schools.com/python/ref_string_strip.asp
-        name = self.field_name.get().strip()
+        username = self.field_name.get().strip()
         password = self.field_password.get().strip()
 
-        self.controller.handle_connection(name, "", "", password,) # password2
+        self.controller.handle_connection(username, password) # password2
 
 # tests
 if __name__ == "__main__":
     root = tk.Tk()
     root.geometry("600x400")
-    page = Login(root)
+    # pyrefly: ignore[bad-argument-type]
+    page = Login(root, None)
     tk.mainloop()
