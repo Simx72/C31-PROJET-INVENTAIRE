@@ -20,112 +20,118 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Avlan4511"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Avlan4511&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Simx72/C31-PROJET-INVENTAIRE.git",
-    "accountId": "20904b9e-44df-434d-b8a2-c8d90afbbd71"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Simx72/C31-PROJET-INVENTAIRE.git&quot;,
+    &quot;accountId&quot;: &quot;20904b9e-44df-434d-b8a2-c8d90afbbd71&quot;
   }
-}]]></component>
+}</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.4424564511775265E-51" />
-      <entry key="MS500" value="7.593617195210142E-11" />
-      <entry key="S2" value="0.0037890130947374643" />
-      <entry key="S5" value="0.15612702087840888" />
-      <entry key="S10" value="0.5610436510613201" />
-      <entry key="S30" value="2.0909006889945254" />
-      <entry key="S60" value="5.324044994703668" />
-      <entry key="M2" value="15.467975751062932" />
-      <entry key="M5" value="42.87219814406426" />
-      <entry key="M10" value="72.31355836986062" />
-      <entry key="M15" value="93.08096496659819" />
-      <entry key="M30" value="143.98456934899895" />
-      <entry key="H1" value="230.64510197244044" />
-      <entry key="H2" value="331.4298294434024" />
-      <entry key="H4" value="412.1704448191059" />
-      <entry key="D1" value="503.4415633501161" />
-      <entry key="W1" value="521.8446312071288" />
+      <entry key="MS100" value="1.0000552951226085" />
+      <entry key="MS500" value="1.2764709319354834" />
+      <entry key="S2" value="4.147245070497006" />
+      <entry key="S5" value="8.22319073692017" />
+      <entry key="S10" value="10.98650877806945" />
+      <entry key="S30" value="14.28992135184802" />
+      <entry key="S60" value="22.145241077786498" />
+      <entry key="M2" value="54.40925041000817" />
+      <entry key="M5" value="150.17093183832037" />
+      <entry key="M10" value="240.93920613361607" />
+      <entry key="M15" value="292.98049514134" />
+      <entry key="M30" value="383.31929746439795" />
+      <entry key="H1" value="494.094984394064" />
+      <entry key="H2" value="611.8722075812638" />
+      <entry key="H4" value="704.8844831281673" />
+      <entry key="D1" value="810.087243429488" />
+      <entry key="W1" value="831.3517809978191" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000000000000058" />
-      <entry key="S60" value="1.0000000846918076" />
-      <entry key="M2" value="1.0004781452787497" />
-      <entry key="M5" value="1.1247379691789703" />
-      <entry key="M10" value="1.8578210294163289" />
-      <entry key="M15" value="2.6848672448805098" />
-      <entry key="M30" value="4.834725501009812" />
-      <entry key="H1" value="7.9687982241725015" />
-      <entry key="H2" value="11.222000624769839" />
-      <entry key="H4" value="13.684839875994726" />
-      <entry key="D1" value="16.375501119783515" />
-      <entry key="W1" value="16.908826936437805" />
+      <entry key="MS100" value="9.339409636226027E-204" />
+      <entry key="MS500" value="2.477786514177451E-41" />
+      <entry key="S2" value="7.055307895363034E-11" />
+      <entry key="S5" value="8.697739351658059E-5" />
+      <entry key="S10" value="0.009326442107795128" />
+      <entry key="S30" value="0.21864397048569306" />
+      <entry key="S60" value="0.619417350185466" />
+      <entry key="M2" value="1.6624170830235587" />
+      <entry key="M5" value="4.406246067663756" />
+      <entry key="M10" value="6.929144660135471" />
+      <entry key="M15" value="8.535879485063079" />
+      <entry key="M30" value="11.670469757854335" />
+      <entry key="H1" value="15.489906626387445" />
+      <entry key="H2" value="19.279830416454686" />
+      <entry key="H4" value="22.136955585089147" />
+      <entry key="D1" value="25.270155271198387" />
+      <entry key="W1" value="25.893379220877424" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.01745761153237844" />
-      <entry key="MS500" value="0.44503786670165985" />
-      <entry key="S2" value="0.820551444031" />
-      <entry key="S5" value="1.0782497967234586" />
-      <entry key="S10" value="1.5211772931772949" />
-      <entry key="S30" value="3.0771427693521116" />
-      <entry key="S60" value="6.3159544597204" />
-      <entry key="M2" value="16.461951191507847" />
-      <entry key="M5" value="43.9907830193257" />
-      <entry key="M10" value="74.16300572436631" />
-      <entry key="M15" value="95.7563976720089" />
-      <entry key="M30" value="148.80921742011725" />
-      <entry key="H1" value="238.6045665304046" />
-      <entry key="H2" value="342.6448219898715" />
-      <entry key="H4" value="425.8508746676072" />
-      <entry key="D1" value="519.8161623949328" />
-      <entry key="W1" value="538.7533245154005" />
+      <entry key="MS100" value="0.9794743194749231" />
+      <entry key="MS500" value="1.2709969477775185" />
+      <entry key="S2" value="4.14262952150367" />
+      <entry key="S5" value="8.219690691012042" />
+      <entry key="S10" value="10.993194643917386" />
+      <entry key="S30" value="14.50531672338516" />
+      <entry key="S60" value="22.759732165941493" />
+      <entry key="M2" value="56.06086341094818" />
+      <entry key="M5" value="154.56000039439655" />
+      <entry key="M10" value="247.85148380989676" />
+      <entry key="M15" value="301.5004616609132" />
+      <entry key="M30" value="394.97587935729507" />
+      <entry key="H1" value="509.57337214875014" />
+      <entry key="H2" value="631.1437515208503" />
+      <entry key="H4" value="727.016299959603" />
+      <entry key="D1" value="835.3563559183531" />
+      <entry key="W1" value="857.2450058957213" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3MWOMcok200BkuEytGs8c0DxZEk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.client_list.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/mlussier/Desktop/inventaire_project_Version2/view/pages",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Historique (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.Historique.executor&quot;: &quot;Run&quot;,
+    &quot;Python.client_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python.historique (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.liste_clients.executor&quot;: &quot;Run&quot;,
+    &quot;Python.login.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mlussier/Desktop/inventaire_project_Version2/view/pages&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mlussier\Desktop\inventaire_project_Version2\view\pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.client_list">
-    <configuration name="client_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="inventaire_project_Version2" />
+  <component name="RunManager" selected="Python.login">
+    <configuration default="true" type="DjangoTestsConfigurationType">
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,15 +139,38 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="~\Desktop\C31-PROJET-INVENTAIRE\.venv" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/view/pages" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="RUN_AS_SCRIPT" value="false" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/view/pages/client_list.py" />
+      <option name="RUN_AS_SCRIPT" value="" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="" />
+      <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,6 +204,84 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="historique (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="~\Desktop\C31-PROJET-INVENTAIRE\.venv" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/view/pages" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="false" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/view/pages/historique.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="historique" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="~\Desktop\C31-PROJET-INVENTAIRE\.venv" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/view/pages" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="false" />
+      <option name="SCRIPT_NAME" value="C:\Users\mlussier\Desktop\inventaire_project_Version2\view\pages\historique.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="historique" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="inventaire_project_Version2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="~\Desktop\C31-PROJET-INVENTAIRE\.venv" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/view/pages" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="false" />
+      <option name="SCRIPT_NAME" value="C:\Users\mlussier\Desktop\inventaire_project_Version2\view\pages\historique.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="inventaire_project_Version2" />
       <option name="ENV_FILES" value="" />
@@ -184,13 +291,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="~\Desktop\C31-PROJET-INVENTAIRE\.venv" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/view/pages" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="RUN_AS_SCRIPT" value="" />
+      <option name="RUN_AS_SCRIPT" value="false" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/view/pages/login.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -226,12 +334,148 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="Python.Celery" factoryName="Python.Celery.App">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.Celery" factoryName="Python.Celery.Task">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.DjangoTask">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="RUN_AS_SCRIPT" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.client_list" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.login" />
-        <item itemvalue="Python.controller" />
+        <item itemvalue="Python.historique (1)" />
+        <item itemvalue="Python.historique" />
+        <item itemvalue="Python.historique" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +493,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1795462813110</updated>
-      <workItem from="1795462814116" duration="5934000" />
+      <workItem from="1795462814116" duration="6574000" />
     </task>
     <task id="LOCAL-00001" summary="get_list_client commit">
       <option name="closed" value="true" />
@@ -281,7 +525,12 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/inventaire_project_Version2$login.coverage" NAME="login Coverage Results" MODIFIED="1795472231954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view/pages" />
+    <SUITE FILE_PATH="coverage/inventaire_project_Version2$Historique.coverage" NAME="Historique Coverage Results" MODIFIED="1795472129179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view/pages" />
+    <SUITE FILE_PATH="coverage/inventaire_project_Version2$historique__1_.coverage" NAME="historique (1) Coverage Results" MODIFIED="1795472162420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view/pages" />
+    <SUITE FILE_PATH="coverage/inventaire_project_Version2$Historique__1_.coverage" NAME="Historique (1) Coverage Results" MODIFIED="1795472125932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view/pages" />
     <SUITE FILE_PATH="coverage/inventaire_project_Version2$main.coverage" NAME="main Coverage Results" MODIFIED="1795471516897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/inventaire_project_Version2$client_list.coverage" NAME="client_list Coverage Results" MODIFIED="1795471590150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view/pages" />
+    <SUITE FILE_PATH="coverage/inventaire_project_Version2$client_list.coverage" NAME="client_list Coverage Results" MODIFIED="1795471747732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view/pages" />
+    <SUITE FILE_PATH="coverage/inventaire_project_Version2$liste_clients.coverage" NAME="liste_clients Coverage Results" MODIFIED="1795471776695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view/pages" />
   </component>
 </project>
