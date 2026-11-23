@@ -1,7 +1,7 @@
 import tkinter as tk
-from Inventaire.widgets.headers import Heading1, Heading2, Heading3, Heading4, SearchBar
-from Inventaire.widgets.buttons import ConfirmationButton, CancelButton
-from Inventaire.widgets.inputs import Input
+from Inventaire_Marthe.widgets.headers import Heading1, Heading2, Heading3, Heading4, SearchBar
+from Inventaire_Marthe.widgets.buttons import ConfirmationButton, CancelButton
+from Inventaire_Marthe.widgets.inputs import Input
 
 class View:
     def create_add_equip(self, equip_parent):
