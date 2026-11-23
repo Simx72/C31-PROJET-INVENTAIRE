@@ -1,4 +1,3 @@
-nom_client,prenom_client,email,nip,password
 Video,Jeu,gaming@gmail.com,12,yes12345
 Sonic,Mario,gmail@olympique.com,21,ABCD1234
 Deux,Un,trois@quatre.com,33,Somethinghere101

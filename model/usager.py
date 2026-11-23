@@ -52,13 +52,13 @@ class Usager():
     #     self.nom = nom
     #     self.id_client = Creer_Usager()
                                                     #password2
-    def __init__(self, prenom, nom, email, password1, personnel):
+    def __init__(self, prenom, nom, email, password1):
         # Modifer par des input (texte écrit)
         self.prenom = prenom
         self.nom = nom
         self.email = email
         self.password = password1
-        self.is_personnel = personnel # si false == etudiant, si true == personnel
+        # self.is_personnel = personnel # si false == etudiant, si true == personnel
 
     # def mot_de_passe_correcte(self, password1, password2):
     #     if (password1 == password2):

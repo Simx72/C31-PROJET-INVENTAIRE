@@ -1,4 +1,3 @@
-nom_personnel,prenom_personnel,email,nip,password
 Depin,Pomme,depinp@gmail.com,1,Arbre2000
 Cachou,Amande,noix@peanut.com,2,Arachide1234
 Mercure,Venus,terre@mars.jupiter,3,UranusNeptunePluton

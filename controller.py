@@ -4,6 +4,7 @@ import model.model as Model
 from model.usager import Usager
 from view.view import View
 from view.pages.login import Login
+
 import tkinter as tk
 
 
@@ -27,6 +28,11 @@ class Controller:
 
         # self.login = Login(self.root)
         self.page.mainloop()
+
+        # traiter information pour la connexion
+    # def traiter_connexion(self):
+
+
 
 
 if __name__ == "__main__":
