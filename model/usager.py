@@ -5,10 +5,16 @@ import view.pages.login as login
 id_client = 0
 
 
-def Creer_Usager():
+def Creer_Usager(prenom, nom, courriel, matricule, mot_de_passe1):
     global id_client
-    id_client += 1
-    return str(id_client)
+
+    if(matricule == ""):
+        id_client += 1
+    else:
+        id_client = matricule
+    # return str(id_client)
+    usager = Usager(prenom, nom, courriel, matricule, mot_de_passe1)
+    return usager
 
 
 class Usager():

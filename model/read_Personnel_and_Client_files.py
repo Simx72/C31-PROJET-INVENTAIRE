@@ -180,20 +180,45 @@ import view.pages.login as login
 
 class Personnel:
     def __init__(self):
-        self.personel = usager.Usager(login.Login.get_prenom(self),
-                        login.Login.get_nom(self),
-                        login.Login.get_courriel(self),
-                        login.Login.get_matricule(self),
-                        login.Login.get_mot_de_passe(self))
+        self.personel = usager.Usager(login.Login.get_prenom(),
+                                      login.Login.get_nom(),
+                                      login.Login.get_courriel(),
+                                      login.Login.get_matricule(),
+                                      login.Login.get_mot_de_passe1())
 
 
     def lire_Personnel_et_Client(self):
-        #https: // www.docstring.fr / formations / faq / fichiers / comment - lire - et - ecrire - dans - un - fichier - en - python /
+        self.liste_personnel = []
+        self.liste_client = []
 
-        fPersonnel = open('Personnel.txt', 'r')
-        contenu = fPersonnel.read()
-        print(contenu)
-        fPersonnel.close()
+
+        #https: // www.docstring.fr / formations / faq / fichiers / comment - lire - et - ecrire - dans - un - fichier - en - python /
+        # Personnel.txt
+        with open('Personnel.txt', 'r') as fPersonnel:
+            self.lignesP = fPersonnel.readlines()  # Retourne une liste
+
+        for ligne in self.lignesP:
+            print(ligne)
+
+        # Clients.txt
+        with open('Client.txt', 'r') as fClients:
+            self.lignesC = fClients.readlines()  # Retourne une liste
+
+        for ligne in self.lignesC:
+            print(ligne)
+
+    def liste_employer(self):
+        self.liste_personnel = []
+        self.liste_client = []
+
+        for i in range(0, 5):  # 0 = premon, 4 = mot_de_passe1
+            self.liste_personnel.append(usager.Creer_Usager(self.lignesP[i].strip().split(",")))
+
+
+        for i in range(0, 5):  # 0 = premon, 4 = mot_de_passe1
+            self.liste_client.append(usager.Creer_Usager(self.lignesC[i].strip().split(",")))
+
+
 
 # if __name__ == '__main__':
 #     personnel = Personnel()
