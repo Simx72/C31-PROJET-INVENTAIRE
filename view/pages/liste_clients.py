@@ -4,12 +4,6 @@ class Liste_client(tk.Frame):
     tk.Frame.__init__(self, parent)
 
 
-    # 
-
-    # titre
-    self.label_titre = tk.Label(parent, text="Liste des clients", font=("Arial", 16, "bold"))
-    self.label_titre.pack(pady=(0, 15))
-
 
 
 # tests
