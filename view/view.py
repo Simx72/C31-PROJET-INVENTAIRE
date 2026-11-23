@@ -1,12 +1,15 @@
-from typing import TYPE_CHECKING 
-from view.pages.login import Login
 import tkinter as tk
 from tkinter import font as tkfont
 
+# Pages
+from view.pages.login import Login
+from view.pages.menu_principal import MenuPrincipal
+
+from typing import TYPE_CHECKING 
 if TYPE_CHECKING:
     from controller import Controller
 
-PAGES: tuple[tk.Frame, ...] = (Login,)
+PAGES: tuple[tk.Frame, ...] = (Login,MenuPrincipal)
 
 class View(tk.Tk):
     controller: Controller
