@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from controller import Controller
 
-class MainMenu(tk.Frame):
+class MenuPrincipal(tk.Frame):
     def __init__(self, parent: tk.Frame, controller: Controller):
         tk.Frame.__init__(self, parent)
         self.controller = controller
@@ -31,6 +31,6 @@ class MainMenu(tk.Frame):
 if __name__ == "__main__":
     root = tk.Tk()
     root.geometry("600x400")
-    page = MainMenu(root, None)
+    page = MenuPrincipal(root, None)
     page.pack()
     tk.mainloop()
