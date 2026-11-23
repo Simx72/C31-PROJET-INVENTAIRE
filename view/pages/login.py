@@ -1,4 +1,5 @@
 import tkinter as tk
+# import Controller as controller
 class Login(tk.Frame):
   def __init__(self, parent):
     tk.Frame.__init__(self, parent)
@@ -61,13 +62,17 @@ class Login(tk.Frame):
     mot_de_passe1 = self.champ_mdp1.get().strip()
     # mot_de_passe2 = self.champ_mdp2.get().strip()
                                                                                     # mot_de_passe2
-    self.controller.traiter_connexion(prenom, nom, courriel, matricule, mot_de_passe1)
+    # traiter_connexion(prenom, nom, courriel, matricule, mot_de_passe1)
+    self.traiter_connexion(self, prenom, nom, courriel, matricule, mot_de_passe1)
 
-  #commentary here lmao
-# tests
-if __name__ == "__main__":
-  root = tk.Tk()
-  root.geometry("600x400")
-  page = Login(root)
+  def traiter_connexion(self, self1, prenom, nom, courriel, matricule, mot_de_passe1):
+    pass
 
-  tk.mainloop()
+
+# # tests
+# if __name__ == "__main__":
+#   root = tk.Tk()
+#   root.geometry("800x700")
+#   page = Login(root)
+#
+#   tk.mainloop()
