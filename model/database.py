@@ -7,7 +7,7 @@ import csv
 
 class Table:
     path: Path
-    fields: set[str, ...]
+    fields: set[str]
     rows: dict[UUID, dict[str, str]]
 
     def __init__(self, datadir: Path, filename: str, fields: set[str]):
@@ -53,7 +53,7 @@ class Table:
     def get_rows_by(self, field: str, value: str) -> list[dict[str, str]]:
         return [row for row in self.get_all_rows() if row[field] == value]
     
-    def get_row_by(self, field: str, value: str) -> dict[str, str]:
+    def get_row_by(self, field: str, value: str) -> dict[str, str] | None:
         matches = self.get_rows_by(field, value)
         if len(matches) > 0:
             first_match = matches[0]
@@ -84,6 +84,10 @@ class Table:
         return self.rows[key]
 
 class Db:
+    users: Table
+    logs: Table
+    items: Table
+    clients: Table
     exemple: Table
 
     def __init__(self):
